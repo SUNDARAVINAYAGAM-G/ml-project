@@ -1,0 +1,43 @@
+First program of basic calculator:
+Step1 :
+Two numbers get from to the user for input.
+What operator are use, It will also get from the user.
+
+Step2 :
+If & Elif condition statement use of each and every operator on there work with operation.
++ operator – sum, - Operator – subtraction, * - multiplication, / - Division operations.
+Step3 :
+All operator have user from input use the calculation operations.
+Step4 :
+Display the output result show to the terminal
+Step 5 :
+Else statement is used for invalid operator from to the user.it will stop the program.
+
+File Name : studentname_stage1
+# Basic Calculator Program
+
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+op = input("Enter operator (+, -, *, /): ")
+
+if op == "+":
+    result = num1 + num2
+    print("Result =", result)
+
+elif op == "-":
+    result = num1 - num2
+    print("Result =", result)
+
+elif op == "*":
+    result = num1 * num2
+    print("Result =", result)
+
+elif op == "/":
+    if num2 == 0:
+        print("Error: Division by zero is not allowed")
+    else:
+        result = num1 / num2
+        print("Result =", result)
+
+else:
+    print("Invalid operator")
